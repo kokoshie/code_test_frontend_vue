@@ -135,7 +135,6 @@
                               <div class="mb-3">
                                 <label for="formFile" class="form-label">Category</label>
                                 <select class="form-select"  v-model="editProduct.category_id" name="category_id"  aria-label="Default select example" @change="clear_errors">
-                                  <option value="0">Select Category</option>
                                   <option v-for="(category,index) in categories" :key="index" :value="category.id">{{ category.name }}</option>
                                 </select>
                                 <div class="" v-if="errors.category_id">
